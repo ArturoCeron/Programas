@@ -3,7 +3,7 @@ cadena : .asciz " Hola Mundo !\ n "
 cadenafin :
 .text
 .global main
-MAIN : push { r7, lr } /* preservamos reg. */
+MAIN : PUSH { r7, lr } /* preservamos reg. */
 MOV r0, # 1 /* salida est á ndar */
 LDR r1, = cadena /* cadena a enviar */
 MOV r2, # cadenafin - cadena /* longitud */
